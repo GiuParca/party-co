@@ -5,14 +5,14 @@ import Quiz from "../images/quiz.png";
 import './Home.css';
 
 const Home = () => {
-    const quizState = useContext(QuizContext)
+    const [quizState, dispatch] = useContext(QuizContext)
 
     return (
         <div id="welcome">
             <h2>Welcome to Trivia&Co.</h2>
             <img src={Quiz} alt="quiz start image" />
             <p>Ready to start?</p>
-            <button>Let's go!🤘</button>
+            <button onClick={() => dispatch({type: "CHANGE_STATE"})}>Let's go!🤘</button>
         </div>
     )
 }

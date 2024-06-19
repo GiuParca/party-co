@@ -40,3 +40,5 @@ const data = [
         "answer": "Oscar Niemeyer"
       }
 ]
+
+export default data;
