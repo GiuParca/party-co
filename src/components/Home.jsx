@@ -13,7 +13,6 @@ const Home = () => {
             <img src={Quiz} alt="quiz start image" />
             <p>Ready to start?</p>
             <button>Let's go!🤘</button>
-
         </div>
     )
 }
